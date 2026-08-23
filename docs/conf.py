@@ -6,7 +6,7 @@
 import os
 import sys
 
-sys.path.insert(0, os.path.abspath(".."))
+sys.path.insert(0, os.path.abspath("../src/"))
 
 # -- Project information -----------------------------------------------------
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#project-information
@@ -63,9 +63,14 @@ html_theme_options = {
     "icon_links": [
         {
             "name": "GitHub",
-            "url": "https://github.com/michabirklbauer/python_template",
+            "url": "https://github.com/michabirklbauer/python-pkg_template",
             "icon": "fa-brands fa-github",
             "type": "fontawesome",
+        },
+        {
+            "name": "PyPI",
+            "url": "https://pypi.org/project/your-package-name",
+            "icon": "fa-brands fa-python",
         },
     ],
     "show_toc_level": 2,
@@ -75,7 +80,7 @@ html_theme_options = {
 html_context = {
     "github_url": "https://github.com",
     "github_user": "michabirklbauer",
-    "github_repo": "python_template",
+    "github_repo": "python-pkg_template",
     "github_version": "master",
     "doc_path": "docs",
     "default_mode": "auto",
