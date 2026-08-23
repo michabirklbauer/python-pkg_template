@@ -38,7 +38,7 @@ and tested with [pytest](https://docs.pytest.org/en/stable/) using
       ```
     - Build documentation with:
       ```bash
-      uv run sphinx-apidoc -f -o docs .
+      uv run sphinx-apidoc -f -o docs src/python_pkg_template
       ```
       and
       ```bash
