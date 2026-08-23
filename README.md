@@ -29,7 +29,7 @@ and tested with [pytest](https://docs.pytest.org/en/stable/) using
   - Adjust the configuration to your needs in `docs/conf.py`.
   - Automatically via GitHub Actions:
     - In the file `.github/workflows/gh-pages.yml` in line `55` replace `src/python_pkg_template` with `src/name_of_your_package`.
-      E.g. the full line should read as:
+      For example, the full line should read as:
       ```bash
       uv run sphinx-apidoc -f -o docs src/name_of_your_package
       ```
@@ -58,6 +58,14 @@ and tested with [pytest](https://docs.pytest.org/en/stable/) using
 - [ ] Adjust this `README.md` to your needs!
 
 ## Package Deployment and Workflows
+
+Please consider reading the [Python Packaging User Guide](https://packaging.python.org/)!
+
+> [!IMPORTANT]
+>
+> In order to publish your python package you need to create an account on [PyPI](https://pypi.org/) and
+> ideally also [TestPyPI](https://test.pypi.org/)
+> for [staging](https://en.wikipedia.org/wiki/Deployment_environment#Staging).
 
 TODO
 
