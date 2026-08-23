@@ -5,7 +5,6 @@
 # https://github.com/username/
 # your.mail@mail.com
 
-
 r"""An example python package with a script that battles two characters.
 
 .. code-block:: text
