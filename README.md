@@ -75,7 +75,7 @@ Please consider reading the [Python Packaging User Guide](https://packaging.pyth
 
 ### Staging and Publishing
 
-Whenever you have a new version of your package ready, go to the `Actions` tab in your repository and run the following workflows:
+Whenever you have a new version of your package ready, go to the `Actions` tab in your GitHub repository and run the following workflows:
 
 - [ ] Run `Publish Python Package to TestPyPI` (workflow file: `publish-testpypi.yml`).
 - [ ] Check that the workflow successfully completes!
