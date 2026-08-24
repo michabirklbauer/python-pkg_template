@@ -52,8 +52,9 @@ html_theme_options = {
         "image_light": "icons/icon.png",
         "image_dark": "icons/icon.png",
     },
-    "header_links_before_dropdown": 5,
+    "header_links_before_dropdown": 6,
     "external_links": [
+        {"name": "guide", "url": "https://packaging.python.org/"},
         {"name": "uv", "url": "https://docs.astral.sh/uv/"},
         {"name": "ruff", "url": "https://docs.astral.sh/ruff/"},
         {"name": "ty", "url": "https://docs.astral.sh/ty/"},
