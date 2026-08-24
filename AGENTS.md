@@ -1,8 +1,8 @@
-# Template Repository for Python Scripts
+# Template Repository for Python Packages
 
-A template repository for modern python development with [uv](https://docs.astral.sh/uv/)
-using [Pydantic](https://pydantic.dev/docs/validation/latest/get-started/),
-[Polars](https://pola.rs/), and [Streamlit](https://streamlit.io/).
+A template repository for modern python package development with [uv](https://docs.astral.sh/uv/)
+using [Pydantic](https://pydantic.dev/docs/validation/latest/get-started/) and 
+[Polars](https://pola.rs/).
 Linted with [ruff](https://astral.sh/ruff),
 type checked with [ty](https://docs.astral.sh/ty/) and [pyright](https://microsoft.github.io/pyright),
 and tested with [pytest](https://docs.pytest.org/en/stable/) using
@@ -10,11 +10,9 @@ and tested with [pytest](https://docs.pytest.org/en/stable/) using
 
 ## Repository Structure
 
-- `main.py` is the main entry point and contains all application logic.
-- `main.py` should be self contained, do not split application logic into multiple files.
-- `main.py` can be renamed to have a more descriptive name.
-- `app.py` contains the [Streamlit](https://streamlit.io/) web app code.
-- `app.py` should import any necessary functionality from `main.py`.
+- Thy python package configuration should all go into the `pyproject.toml`.
+- The python package code should go into `src/python_pkg_template/`.
+- The `python_pkg_template/` directory should be renamed to the desired package name.
 - Tests should go into the `tests/` directory.
 - Every test file should have a `test_` prefix.
 - Configuration for [Sphinx](https://www.sphinx-doc.org/) should go into the `docs/` directory.
@@ -54,10 +52,10 @@ and tested with [pytest](https://docs.pytest.org/en/stable/) using
 - Make sure to use an up-to-date version of ty, e.g. by running `uv lock --upgrade-package ty`.
 - Make sure to use an up-to-date version of pyright, e.g. by running `uv lock --upgrade-package pyright`.
 - Make sure to follow python naming conventions and code style, e.g. defined via [PEP 8](https://peps.python.org/pep-0008/).
-- Use [Pydantic](https://pydantic.dev/docs/validation/latest/get-started/) for classes as also demonstrated in the `main.py` file.
+- Use [Pydantic](https://pydantic.dev/docs/validation/latest/get-started/) for classes as also demonstrated in the `src/python_pkg_template/_character.py` file.
 - Function parameters should ideally be type checked using `isinstance()` or other suitable python type checking methods, do not use the [Typeguard](https://github.com/agronholm/typeguard) library for this purpose unless specifically prompted.
 - Use `logging` for logging state and events of python code.
-- Use `argparse` in the `main.py` file to parse commandline arguments.
+- Use `argparse` for any functions that should be executed as scripts to parse commandline arguments.
 
 ## Testing
 
@@ -72,7 +70,8 @@ and tested with [pytest](https://docs.pytest.org/en/stable/) using
 - Use [numpydoc style](https://numpydoc.readthedocs.io/en/latest/format.html) for inline documentation.
 - Use [Sphinx](https://www.sphinx-doc.org/) for setting up `html` documentation.
 - Configuration for Sphinx should go into the `docs/` directory.
-- The `html` documentation can be built locally by running `uv run sphinx-apidoc -f -o docs .` and `uv run sphinx-build -b html docs html`.
+- The `html` documentation can be built locally by running `uv run sphinx-apidoc -f -o docs src/python_pkg_template` and `uv run sphinx-build -b html docs html`.
+- Replace `python_pkg_template` with the actual package directory in the Sphinx build commands.
 
 ## Docker
 
