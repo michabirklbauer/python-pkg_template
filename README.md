@@ -67,7 +67,29 @@ Please consider reading the [Python Packaging User Guide](https://packaging.pyth
 > ideally also [TestPyPI](https://test.pypi.org/)
 > for [staging](https://en.wikipedia.org/wiki/Deployment_environment#Staging).
 
-TODO
+- [ ] Setup [trusted publishing](https://packaging.python.org/en/latest/guides/publishing-package-distribution-releases-using-github-actions-ci-cd-workflows/#configuring-trusted-publishing).
+- [ ] Replace `<NAME-OF-YOUR-PACKAGE>` with the name of your package in line `37` of `.github/workflows/publish-testpypi.yml`.
+- [ ] Replace `<NAME-OF-YOUR-PACKAGE>` with the name of your package in line `37` of `.github/workflows/publish-pypi.yml`.
+- [ ] Replace `<NAME-OF-YOUR-PACKAGE>` with the name of your package in line `28` of `.github/workflows/test-testpypi.yml`.
+- [ ] Replace `<NAME-OF-YOUR-PACKAGE>` with the name of your package in line `28` of `.github/workflows/test-pypi.yml`.
+
+### Staging and Publishing
+
+Whenever you have a new version of your package ready, go to the `Actions` tab in your repository and run the following workflows:
+
+- [ ] Run `Publish Python Package to TestPyPI` (workflow file: `publish-testpypi.yml`).
+- [ ] Check that the workflow successfully completes.
+- [ ] Run `Run tests on package from TestPyPI` (workflow file: `test-testpypi.yml`).
+- [ ] Check that the workflow successfully completes.
+- [ ] Run `Publish Python Package to PyPI` (workflow file: `publish-pypi.yml`).
+- [ ] Check that the workflow successfully completes.
+- [ ] Run `Run tests on package from PyPI` (workflow file: `test-pypi.yml`).
+- [ ] Check that the workflow successfully completes.
+- [ ] Done! Your package was successfully published to TestPyPI and PyPI!
+
+> [!NOTE]
+>
+> You can omit TestPyPI but staging is generally good practice!
 
 ## Helpful Commands
 
