@@ -111,9 +111,9 @@ Whenever you have a new version of your package ready, go to the `Actions` tab i
     ```bash
     uv run python
     ```
-  - Run a script (with arguments):
+  - Run a package script (with arguments):
     ```bash
-    uv run main.py -h
+    uv run battle -h
     ```
 - [ruff](https://docs.astral.sh/ruff/):
   - Check and fix (fixable) errors:
