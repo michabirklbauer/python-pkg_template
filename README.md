@@ -62,7 +62,6 @@ and tested with [pytest](https://docs.pytest.org/en/stable/) using
 Please consider reading the [Python Packaging User Guide](https://packaging.python.org/)!
 
 > [!IMPORTANT]
->
 > In order to publish your python package you need to create an account on [PyPI](https://pypi.org/) and
 > ideally also [TestPyPI](https://test.pypi.org/)
 > for [staging](https://en.wikipedia.org/wiki/Deployment_environment#Staging).
@@ -89,7 +88,6 @@ Whenever you have a new version of your package ready, go to the `Actions` tab i
 - [ ] Done! Your package was successfully published to _TestPyPI_ and _PyPI_!
 
 > [!NOTE]
->
 > You can omit TestPyPI but staging is generally good practice!
 
 ## Helpful Commands
